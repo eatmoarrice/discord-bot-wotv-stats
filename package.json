@@ -1,0 +1,18 @@
+{
+	"name": "discord-nag-a-bot",
+	"version": "1.0.0",
+	"description": "Reminds everyone to do GW",
+	"main": "index.js",
+	"scripts": {
+		"start": "node bot.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "EatMoarRice",
+	"license": "ISC",
+	"dependencies": {
+		"discord.js": "^12.3.1",
+		"dotenv": "^8.2.0",
+		"node-cron": "^2.0.3",
+		"node-fetch": "^2.6.1"
+	}
+}
