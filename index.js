@@ -74,6 +74,11 @@ const getInfo = async (name) => {
 	return { stats: response.data.statImgUrl, res: response.data.resImgUrl };
 };
 
+const pickOne = (array) => {
+	let choice = array[Math.floor(Math.random() * array.length)].replace(',', '').trim();
+	return `'${choice.charAt(0).toUpperCase() + choice.slice(1)}'`;
+};
+
 bot.on('message', async (msg) => {
 	let message = msg.content.replace(/\s+/g, ' ').trim().toLowerCase();
 	let words = message.split(' ');
